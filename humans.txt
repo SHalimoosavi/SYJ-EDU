@@ -1,0 +1,16 @@
+/* TEAM */
+Founder & Maintainer: Syed Ali Hasan Moosavi
+Site: https://shalimoosavi.github.io/moosavi/
+GitHub: https://github.com/SHalimoosavi
+X (Twitter): https://x.com/SHAliMoosavi
+Location: Hyderabad, India
+
+/* THANKS */
+Every open-source contributor who has filed an issue, opened a pull
+request, or shared feedback in GitHub Discussions.
+
+/* SITE */
+Last update: 2026/07/16
+Standards: HTML5, CSS3, ES2017+
+Components: none (hand-written HTML, CSS, and JavaScript)
+Software: Visual Studio Code, Termux, Git

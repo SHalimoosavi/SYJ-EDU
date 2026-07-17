@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="RhRpM-kPpzv-uHKu5XET8z_0lpO1PIuzYQjgypyHrho" />
+<title>SYJ EDUCATE — Learn Software Engineering by Building Real Projects</title>
+<meta name="description" content="SYJ EDUCATE is a free, open-source learning ecosystem teaching AI engineering, backend development, databases, cybersecurity, OSINT, automation, and SaaS architecture through production-grade projects — not toy tutorials.">
+<meta name="keywords" content="learn software engineering, open source education, AI engineering course, backend development tutorial, OSINT training, cybersecurity learning path, SaaS architecture, build real projects, FastAPI course, free developer education, SYJ Educate">
+<meta name="author" content="Syed Ali Hasan Moosavi">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://shalimoosavi.github.io/SYJ-EDU/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SYJ EDUCATE">
+<meta property="og:title" content="SYJ EDUCATE — Learn Software Engineering by Building Real Projects">
+<meta property="og:description" content="A free, open-source learning ecosystem teaching AI engineering, backend, databases, cybersecurity, OSINT, and SaaS development through production-grade projects.">
+<meta property="og:url" content="https://shalimoosavi.github.io/SYJ-EDU/">
+<meta property="og:image" content="https://shalimoosavi.github.io/SYJ-EDU/images/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SYJ EDUCATE — Learn Software Engineering by Building Real Projects">
+<meta name="twitter:description" content="Free, open-source learning tracks in AI engineering, backend, cybersecurity, OSINT, and SaaS — taught through real production projects.">
+<meta name="twitter:image" content="https://shalimoosavi.github.io/SYJ-EDU/images/og-cover.png">
+<meta name="twitter:site" content="@SHAliMoosavi">
+<meta name="twitter:creator" content="@SHAliMoosavi">
+
+<!-- Icons / manifest -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#12141a">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+<link rel="preload" as="style" href="/css/main.css">
+<link rel="stylesheet" href="/css/main.css">
+
+<!-- Schema.org: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://shalimoosavi.github.io/SYJ-EDU/#organization",
+  "name": "SYJ EDUCATE",
+  "url": "https://shalimoosavi.github.io/SYJ-EDU/",
+  "logo": "https://shalimoosavi.github.io/SYJ-EDU/icons/icon.svg",
+  "sameAs": [
+    "https://github.com/SHalimoosavi/SYJ-EDU",
+    "https://github.com/SHalimoosavi",
+    "https://x.com/SHAliMoosavi",
+    "https://www.linkedin.com/in/shalimoosavi"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Syed Ali Hasan Moosavi"
+  }
+}
+</script>
+
+<!-- Schema.org: WebSite + SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://shalimoosavi.github.io/SYJ-EDU/#website",
+  "url": "https://shalimoosavi.github.io/SYJ-EDU/",
+  "name": "SYJ EDUCATE",
+  "description": "Open-source learning ecosystem teaching modern software engineering through real, production-grade projects.",
+  "publisher": { "@id": "https://shalimoosavi.github.io/SYJ-EDU/#organization" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://shalimoosavi.github.io/SYJ-EDU/projects.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- Schema.org: EducationalOrganization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "SYJ EDUCATE",
+  "url": "https://shalimoosavi.github.io/SYJ-EDU/",
+  "description": "Free, open-source software engineering curriculum covering AI engineering, backend development, databases, cybersecurity, OSINT, automation, and SaaS architecture.",
+  "sameAs": ["https://github.com/SHalimoosavi/SYJ-EDU"]
+}
+</script>
+
+<!-- Schema.org: SoftwareApplication (the open-source project itself) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SYJ Educate",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web",
+  "url": "https://shalimoosavi.github.io/SYJ-EDU/",
+  "license": "https://github.com/SHalimoosavi/SYJ-EDU/blob/main/LICENSE",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "isAccessibleForFree": true
+}
+</script>
+
+<!-- Schema.org: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shalimoosavi.github.io/SYJ-EDU/" }
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand">SYJ<span class="dot">::</span>EDUCATE</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tracks.html">Learning Tracks</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="open-source.html">Open Source</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle dark or light theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="btn btn-ghost btn-sm" href="https://github.com/SHalimoosavi/SYJ-EDU" rel="noopener">GitHub</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow"><span class="pulse" aria-hidden="true"></span>100% open source · MIT licensed</span>
+        <h1>Learn software engineering by <span class="hl">shipping real projects</span>, not watching slides.</h1>
+        <p class="hero-lede">SYJ EDUCATE is a free, open-source curriculum in AI engineering, backend systems, databases, cybersecurity, OSINT, automation, and SaaS architecture — built entirely around production-grade codebases you can run, break, and redeploy.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tracks.html">Start a learning track</a>
+          <a class="btn btn-ghost" href="https://github.com/SHalimoosavi/SYJ-EDU" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.29 9.43 7.86 10.96.57.1.79-.25.79-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.42.36.78 1.07.78 2.16v3.2c0 .3.21.66.8.55A11.51 11.51 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            View documentation
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="num"><span data-count="9">0</span>+</div><div class="label">Learning tracks</div></div>
+          <div class="stat"><div class="num"><span data-count="40">0</span>+</div><div class="label">Real projects</div></div>
+          <div class="stat"><div class="num"><span data-count="13">0</span></div><div class="label">Industry domains</div></div>
+          <div class="stat"><div class="num">$<span data-count="0">0</span></div><div class="label">Cost, forever</div></div>
+        </div>
+      </div>
+
+      <div class="terminal" role="img" aria-label="Animated terminal showing a simulated build log: deploying an AI engineering learning track, adding lessons and projects, and committing production code.">
+        <div class="terminal-bar">
+          <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+          <span class="tpath">~/syj-educate/build-log</span>
+        </div>
+        <div class="terminal-body" data-terminal aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee">
+      <span><strong>AI Engineering</strong> · RAG, agents, evals</span>
+      <span><strong>Backend Engineering</strong> · FastAPI, gRPC, queues</span>
+      <span><strong>Cybersecurity</strong> · API hacking, threat modeling</span>
+      <span><strong>OSINT</strong> · recon, attribution, tooling</span>
+      <span><strong>Database Engineering</strong> · PostgreSQL, indexing, replication</span>
+      <span><strong>SaaS Development</strong> · billing, multi-tenancy</span>
+      <span><strong>Automation</strong> · CI/CD, workflow orchestration</span>
+      <span><strong>AI Engineering</strong> · RAG, agents, evals</span>
+      <span><strong>Backend Engineering</strong> · FastAPI, gRPC, queues</span>
+      <span><strong>Cybersecurity</strong> · API hacking, threat modeling</span>
+      <span><strong>OSINT</strong> · recon, attribution, tooling</span>
+      <span><strong>Database Engineering</strong> · PostgreSQL, indexing, replication</span>
+      <span><strong>SaaS Development</strong> · billing, multi-tenancy</span>
+      <span><strong>Automation</strong> · CI/CD, workflow orchestration</span>
+    </div>
+  </div>
+
+  <!-- ============ LEARNING TRACK PREVIEW ============ -->
+  <section aria-labelledby="tracks-heading">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Learning tracks</span>
+        <h2 id="tracks-heading">Nine tracks. Every one ships a working system.</h2>
+        <p>Each track pairs a structured curriculum with real repositories — no toy to-do apps.</p>
+      </div>
+      <div class="grid grid-3">
+
+        <article class="card track-card">
+          <div class="track-top"><h3>AI Engineering</h3><span class="diff-badge diff-advanced">advanced</span></div>
+          <p>Build retrieval-augmented generation pipelines, agent orchestration, and evaluation harnesses on real datasets.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">LLM APIs</span><span class="tag">Vector DBs</span></div>
+          <div class="track-meta"><span>6 projects</span><span>~8 weeks</span></div>
+          <a class="btn btn-ghost btn-sm" href="tracks.html#ai-engineering">View track</a>
+        </article>
+
+        <article class="card track-card">
+          <div class="track-top"><h3>Backend Engineering</h3><span class="diff-badge diff-intermediate">intermediate</span></div>
+          <p>Design APIs, background workers, and service boundaries the way production systems actually require.</p>
+          <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Queues</span></div>
+          <div class="track-meta"><span>7 projects</span><span>~6 weeks</span></div>
+          <a class="btn btn-ghost btn-sm" href="tracks.html#backend-engineering">View track</a>
+        </article>
+
+        <article class="card track-card">
+          <div class="track-top"><h3>Database Engineering</h3><span class="diff-badge diff-intermediate">intermediate</span></div>
+          <p>Schema design, indexing strategy, replication, and query optimization on datasets that actually hurt at scale.</p>
+          <div class="tag-row"><span class="tag">PostgreSQL</span><span class="tag">SQLite</span><span class="tag">Prisma</span></div>
+          <div class="track-meta"><span>5 projects</span><span>~5 weeks</span></div>
+          <a class="btn btn-ghost btn-sm" href="tracks.html#database-engineering">View track</a>
+        </article>
+
+        <article class="card track-card">
+          <div class="track-top"><h3>Frontend Engineering</h3><span class="diff-badge diff-beginner">beginner</span></div>
+          <p>Component architecture, state management, and accessible interfaces with React, Next.js, and TypeScript.</p>
+          <div class="tag-row"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">TypeScript</span></div>
+          <div class="track-meta"><span>6 projects</span><span>~5 weeks</span></div>
+          <a class="btn btn-ghost btn-sm" href="tracks.html#frontend-engineering">View track</a>
+        </article>
+
+        <article class="card track-card">
+          <div class="track-top"><h3>Cybersecurity</h3><span class="diff-badge diff-advanced">advanced</span></div>
+          <p>API hacking labs, authentication attacks, and secure-by-default backend patterns, taught defensively.</p>
+          <div class="tag-row"><span class="tag">Burp Suite</span><span class="tag">JWT</span><span class="tag">OWASP</span></div>
+          <div class="track-meta"><span>5 projects</span><span>~7 weeks</span></div>
+          <a class="btn btn-ghost btn-sm" href="tracks.html#cybersecurity">View track</a>
+        </article>
+
+        <article class="card track-card">
+          <div class="track-top"><h3>OSINT</h3><span class="diff-badge diff-intermediate">intermediate</span></div>
+          <p>Open-source intelligence gathering, tooling, and reporting workflows for legitimate research and defense.</p>
+          <div class="tag-row"><span class="tag">Shodan</span><span class="tag">VirusTotal</span><span class="tag">Python</span></div>
+          <div class="track-meta"><span>4 projects</span><span>~4 weeks</span></div>
+          <a class="btn btn-ghost btn-sm" href="tracks.html#osint">View track</a>
+        </article>
+
+      </div>
+      <p class="center mt-lg"><a href="tracks.html">See all 9 tracks, including Automation, SaaS &amp; CRM Development →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE GRID ============ -->
+  <section aria-labelledby="why-heading" style="background:var(--surface);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why SYJ EDUCATE</span>
+        <h2 id="why-heading">Built differently, on purpose</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l9 4.5v11L12 22l-9-4.5v-11L12 2Z"/><path d="M12 22V11M3 6.5l9 4.5 9-4.5"/></svg>
+          <h3>Production-grade only</h3>
+          <p>No to-do apps. Every project mirrors a real system you'd ship to users, complete with tests and deployment steps.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21c4.97-3.5 8-7.13 8-11a8 8 0 1 0-16 0c0 3.87 3.03 7.5 8 11Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <h3>Zero cost, forever</h3>
+          <p>MIT-licensed and free to use, fork, and redistribute. No paywalled modules, no "pro tier" bait-and-switch.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2V4Z"/><path d="M8 9h8M8 12h5"/></svg>
+          <h3>Built by a solo founder, in public</h3>
+          <p>Every track is derived from real products shipped under the SYJ brand — including the mistakes, rewrites, and fixes.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 3v18M3 9h18"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+          <h3>Runs on constrained hardware</h3>
+          <p>Curriculum favors zero-native-compilation, single-file, and CDN-based approaches — the same constraints of building on Termux.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROADMAP TIMELINE ============ -->
+  <section aria-labelledby="roadmap-heading">
+    <div class="container">
+      <div class="section-head left">
+        <span class="eyebrow">Roadmap</span>
+        <h2 id="roadmap-heading">Where the curriculum is headed</h2>
+        <p>The roadmap is sequential and versioned like the rest of the project — see the full detail on the <a href="roadmap.html">Roadmap page</a>.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item done">
+          <span class="timeline-num">1</span>
+          <span class="timeline-status">Shipped</span>
+          <h3>Core tracks launched</h3>
+          <p>AI Engineering, Backend, Database, Frontend, Cybersecurity, and OSINT tracks published with full project repositories.</p>
+        </div>
+        <div class="timeline-item wip">
+          <span class="timeline-num">2</span>
+          <span class="timeline-status">In progress</span>
+          <h3>Industry project library</h3>
+          <p>Domain-specific builds across healthcare, agriculture, logistics, retail, and finance — mapped to real SYJ products.</p>
+        </div>
+        <div class="timeline-item todo">
+          <span class="timeline-num">3</span>
+          <span class="timeline-status">Planned</span>
+          <h3>Community mentorship program</h3>
+          <p>Structured code review and pairing for contributors working through advanced tracks.</p>
+        </div>
+        <div class="timeline-item todo">
+          <span class="timeline-num">4</span>
+          <span class="timeline-status">Planned</span>
+          <h3>Certification-style project badges</h3>
+          <p>Verifiable, non-commercial completion badges tied to merged pull requests, not multiple-choice quizzes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section aria-labelledby="testimonials-heading" style="background:var(--surface);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">From the community</span>
+        <h2 id="testimonials-heading">Learners building real things</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="testimonial">
+          <p>"The OSINT track was the first course that showed me how the tools actually connect — not just a list of definitions."</p>
+          <div class="who"><span class="avatar" aria-hidden="true"></span><div><div class="name">Community contributor</div><div class="role">OSINT track, cohort 2</div></div></div>
+        </div>
+        <div class="testimonial">
+          <p>"Shipping a real FastAPI service in week two, instead of week eight, changed how fast I actually learned backend engineering."</p>
+          <div class="who"><span class="avatar" aria-hidden="true"></span><div><div class="name">Community contributor</div><div class="role">Backend Engineering track</div></div></div>
+        </div>
+        <div class="testimonial">
+          <p>"It's rare to find a free curriculum that treats database engineering as seriously as AI engineering. This one does."</p>
+          <div class="who"><span class="avatar" aria-hidden="true"></span><div><div class="name">Community contributor</div><div class="role">Database Engineering track</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OPEN SOURCE PHILOSOPHY ============ -->
+  <section aria-labelledby="oss-heading">
+    <div class="container">
+      <div class="section-head left">
+        <span class="eyebrow">Open source philosophy</span>
+        <h2 id="oss-heading">Curriculum as a public repository, not a product funnel</h2>
+        <p class="lede">SYJ EDUCATE is released under the MIT License. Anyone can fork the curriculum, adapt it to their own cohort, or contribute a new project back to the main repository.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card"><h3>MIT License</h3><p>Full commercial and personal reuse rights, with attribution appreciated but not required by law.</p></div>
+        <div class="card"><h3>Open contributions</h3><p>Pull requests are welcomed for new lessons, bug fixes, translations, and entirely new tracks.</p></div>
+        <div class="card"><h3>Public issue tracker</h3><p>Report unclear lessons, broken project starters, or outdated dependencies directly on GitHub Issues.</p></div>
+        <div class="card"><h3>Transparent roadmap</h3><p>Every planned track and feature is visible on the <a href="roadmap.html">Roadmap page</a> before it ships.</p></div>
+      </div>
+      <p class="center mt-lg"><a href="open-source.html">Read the full Open Source guide →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ PROJECT ARCHITECTURE ============ -->
+  <section aria-labelledby="arch-heading" style="background:var(--surface);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How a project is structured</span>
+        <h2 id="arch-heading">Every project follows the same production shape</h2>
+      </div>
+      <div class="arch-diagram">
+        <div class="arch-node"><span class="l">01 · client</span>Next.js / React / plain HTML</div>
+        <div class="arch-node"><span class="l">02 · api</span>FastAPI service layer</div>
+        <div class="arch-node"><span class="l">03 · data</span>PostgreSQL / SQLite</div>
+        <div class="arch-node"><span class="l">04 · ship</span>Docker + CI/CD to production</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LATEST RELEASES ============ -->
+  <section aria-labelledby="releases-heading">
+    <div class="container">
+      <div class="section-head left">
+        <span class="eyebrow">Latest releases</span>
+        <h2 id="releases-heading">Recently shipped to the curriculum</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="tag-row" style="margin-bottom:12px;"><span class="tag">v1.4.0</span></div>
+          <h3>Agriculture industry project</h3>
+          <p>A farm labour management build mirroring a real EU-market MVP, covering scheduling, compliance, and reporting.</p>
+        </div>
+        <div class="card">
+          <div class="tag-row" style="margin-bottom:12px;"><span class="tag">v1.3.0</span></div>
+          <h3>API hacking lab, part II</h3>
+          <p>Broken authentication and IDOR labs against a deliberately vulnerable FastAPI reference service.</p>
+        </div>
+        <div class="card">
+          <div class="tag-row" style="margin-bottom:12px;"><span class="tag">v1.2.0</span></div>
+          <h3>OSINT tooling walkthrough</h3>
+          <p>Integrating Shodan, VirusTotal, and AbuseIPDB into a single reconnaissance reporting pipeline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GITHUB STATS PLACEHOLDER ============ -->
+  <section aria-labelledby="stats-heading" style="background:var(--surface);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);">
+    <div class="container center">
+      <span class="eyebrow" id="stats-heading">Repository activity</span>
+      <h2>Live GitHub stats render here</h2>
+      <p class="lede" style="margin:0 auto;">This section is wired for GitHub's stats badges once the repository is public. Replace the placeholders in <code>index.html</code> with your preferred stats-image service.</p>
+      <div class="grid grid-3 mt-lg">
+        <div class="card center"><div class="num mono" style="font-family:var(--font-mono);font-size:1.4rem;">★ —</div><p>Stars</p></div>
+        <div class="card center"><div class="num mono" style="font-family:var(--font-mono);font-size:1.4rem;">⑂ —</div><p>Forks</p></div>
+        <div class="card center"><div class="num mono" style="font-family:var(--font-mono);font-size:1.4rem;">◍ —</div><p>Open issues</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ECOSYSTEM LINKS ============ -->
+  <section aria-labelledby="eco-heading">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The SYJ ecosystem</span>
+        <h2 id="eco-heading">Where this curriculum comes from</h2>
+        <p>Every lesson traces back to a real, shipped product under the SYJ brand.</p>
+      </div>
+      <div class="grid eco-grid">
+        <a class="card eco-card" href="https://shalimoosavi.github.io/moosavi/" rel="noopener">
+          <span class="badge" aria-hidden="true">◈</span>
+          <span class="meta"><strong>Founder Portfolio</strong><span>shalimoosavi.github.io/moosavi</span></span>
+        </a>
+        <a class="card eco-card" href="https://shalimoosavi.github.io/SAYANJALI_NEXUS/" rel="noopener">
+          <span class="badge" aria-hidden="true">◆</span>
+          <span class="meta"><strong>Sayanjali Nexus</strong><span>shalimoosavi.github.io/SAYANJALI_NEXUS</span></span>
+        </a>
+        <a class="card eco-card" href="https://shalimoosavi.github.io/SYJ-TOKEN/" rel="noopener">
+          <span class="badge" aria-hidden="true">◎</span>
+          <span class="meta"><strong>SYJ Token</strong><span>shalimoosavi.github.io/SYJ-TOKEN</span></span>
+        </a>
+        <a class="card eco-card" href="https://shalimoosavi.github.io/syj-blockchain-web/" rel="noopener">
+          <span class="badge" aria-hidden="true">⬡</span>
+          <span class="meta"><strong>Sayanjali Blockchain</strong><span>shalimoosavi.github.io/syj-blockchain-web</span></span>
+        </a>
+        <a class="card eco-card" href="https://shalimoosavi.github.io/SYJ-AI-Landing/" rel="noopener">
+          <span class="badge" aria-hidden="true">✳</span>
+          <span class="meta"><strong>SYJ AI</strong><span>shalimoosavi.github.io/SYJ-AI-Landing</span></span>
+        </a>
+        <a class="card eco-card" href="https://shalimoosavi.github.io/SYJ-NexusIntel-AI-Landing/" rel="noopener">
+          <span class="badge" aria-hidden="true">◉</span>
+          <span class="meta"><strong>SYJ NexusIntel AI</strong><span>shalimoosavi.github.io/SYJ-NexusIntel-AI-Landing</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter">
+        <h2 id="newsletter-heading">Get new tracks and projects in your inbox</h2>
+        <p>One email when a new track, project, or major curriculum update ships. No spam, unsubscribe anytime.</p>
+        <form class="newsletter-form" data-static-form aria-label="Newsletter signup">
+          <label class="visually-hidden" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="form-note" data-form-status>We never share your email. Read the <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FAQPage schema for AEO/GEO — answers appear verbatim in the visible FAQ below -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is SYJ EDUCATE really free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. SYJ EDUCATE is released under the MIT License and every learning track, project, and lesson is free to use, fork, and redistribute, with no paid tiers." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need prior experience to start?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Frontend Engineering and several industry projects are beginner-friendly, while tracks like AI Engineering and Cybersecurity assume working knowledge of Python and basic web concepts. Each track lists its difficulty and prerequisites." }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes these projects different from typical coding tutorials?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every project mirrors a production system that was actually shipped under the SYJ brand, complete with real architecture, deployment steps, and known trade-offs, rather than an isolated toy example." }
+    }
+  ]
+}
+</script>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="brand">SYJ<span class="dot">::</span>EDUCATE</a>
+        <p>An open-source learning ecosystem teaching modern software engineering through real, production-grade projects.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="tracks.html">Learning tracks</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Community</h3>
+        <ul>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="open-source.html">Open source</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://shalimoosavi.github.io/moosavi/" rel="noopener">Founder portfolio</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
+          <li><a href="https://github.com/SHalimoosavi/SYJ-EDU/blob/main/LICENSE" rel="noopener">MIT license</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> SYJ EDUCATE · An open-source initiative by Syed Ali Hasan Moosavi</p>
+      <div class="social-row">
+        <a href="https://github.com/SHalimoosavi" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.29 9.43 7.86 10.96.57.1.79-.25.79-.55v-2.14c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.68-1.29-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.42.36.78 1.07.78 2.16v3.2c0 .3.21.66.8.55A11.51 11.51 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+        <a href="https://x.com/SHAliMoosavi" rel="noopener" aria-label="X (Twitter)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3l7.5 9.5L3.4 21H6l6-6.8L17 21h4l-7.8-9.9L20.7 3h-2.6l-5.6 6.3L8 3H3Z"/></svg></a>
+        <a href="https://www.linkedin.com/in/shalimoosavi" rel="noopener" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.53-.98 1.83-2 3.77-2 4.03 0 4.77 2.5 4.77 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

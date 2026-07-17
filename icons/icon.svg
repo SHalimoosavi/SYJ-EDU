@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SYJ EDUCATE logo mark">
+  <rect width="64" height="64" rx="14" fill="#12141a"/>
+  <path d="M18 20 L10 32 L18 44" fill="none" stroke="#58a6ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 20 L54 32 L46 44" fill="none" stroke="#3fb950" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 16 L28 48" fill="none" stroke="#eaecef" stroke-width="4" stroke-linecap="round"/>
+</svg>
