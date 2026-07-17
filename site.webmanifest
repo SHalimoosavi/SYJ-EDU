@@ -2,15 +2,15 @@
   "name": "SYJ EDUCATE",
   "short_name": "SYJ Educate",
   "description": "Learn software engineering by building real, production-grade projects — free and open source.",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#12141a",
   "theme_color": "#12141a",
   "lang": "en",
   "icons": [
-    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
-    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
   ]
 }
